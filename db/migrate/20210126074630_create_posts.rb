@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       # 実際にポストテーブルを作成すると言う仕様
       t.text :content
       # t.の後ろにカラムの型、その右側にシンボルで記載されるのがカラム名
+      t.boolean :checked
       t.timestamps
       # 今はまだ期にする必要なし
     end
