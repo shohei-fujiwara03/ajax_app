@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
 post 'posted',to:'posts#create'
 # 同じpostsURIでも表示されるページは異なる。レスポンスとして返す際のposts画面
+get 'posts/:id', to: 'posts#checked'
+# JavaScriptにデータを返却するためのルーティング
 end
